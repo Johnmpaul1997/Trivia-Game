@@ -3,15 +3,20 @@ console.log("working")
 var timeRemaining = 180;
 var displayInt;
 var questionArr = [{
-    question: "how far can a cheetah jump from a standstill?",
-    answers: ["15ft", "30ft", "45ft", "60ft"],
-    correct: "60ft"
-},
-{
-    question: "the first letter of the alphabet is...?",
-    answers: ["A", "B", "C", "Z"],
-    correct: "A"
-}]
+        question: "how far can a cheetah jump from a standstill?",
+        "What is Batmans civilian persona?",
+        "Who is the strongest Avenger?",
+        answers: ["15ft", "30ft", "45ft", "60ft"]
+            ["Bruce Payne", "Burt Wayne", "Clark Kent", "Bruce Wayne"]
+            ["Thor", "Captain America", "The Incredible Hulk", "Superman"],
+        correct: "60ft", "Bruce Wayne" , "The Incredible Hulk" ,
+    },
+    {
+        question: "the first letter of the alphabet is...?",
+        answers: ["A", "B", "C", "Z"],
+        correct: "A"
+    }
+]
 $("#gameDis").hide()
 
 $("#startBtn").click(function () {
@@ -38,11 +43,12 @@ function startTimer() {
 
 function displayQuiz() {
     $("#questionDis").text("whatever")
-    for(var i = 0; i<questionArr.length;
-        i++){
-            console.log(questionArr[i].question)
-            var newP = $("<p>")
-            newP.text(questionArr[i].question)
-            $("#questionDis").append(newP)
-        }
+    for (var i = 0; i < questionArr.length; i++) {
+        console.log(questionArr[i].question)
+        var newP = $("<p>")
+        newP.text(questionArr[i].question)
+        $("#questionDis").append(newP)
+    }
 }
+
+//similar process to display
