@@ -4,21 +4,21 @@ var timeRemaining = 180;
 var displayInt;
 var questionArr = [{
         question: "how far can a cheetah jump from a standstill?",
-        "What is Batmans civilian persona?",
-        "Who is the strongest Avenger?",
-        answers: ["15ft", "30ft", "45ft", "60ft"]
-            ["Bruce Payne", "Burt Wayne", "Clark Kent", "Bruce Wayne"]
-            ["Thor", "Captain America", "The Incredible Hulk", "Superman"],
-        correct: "60ft", "Bruce Wayne" , "The Incredible Hulk" ,
+        answers: ["15ft", "30ft", "45ft", "60ft"],
+        correct: "60ft",
     },
     {
-        question: "the first letter of the alphabet is...?",
-        answers: ["A", "B", "C", "Z"],
-        correct: "A"
-    }
+        question: "What is Batmans civilian persona?",
+        answers: ["Bruce Payne", "Burt Wayne", "Clark Kent", "Bruce Wayne"],
+        correct: "Bruce Wayne"
+    },
+    {
+        question: "Who is the strongest Avenger?",
+        answers:  ["Thor", "Captain America", "The Incredible Hulk", "Superman"],
+        correct: "The Incredible Hulk"
+    },
 ]
 $("#gameDis").hide()
-
 $("#startBtn").click(function () {
     $("#gameDis").show()
     $("#startBtn").hide()
